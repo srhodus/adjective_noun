@@ -19,18 +19,6 @@ sub read_file {
 my @adj_list = read_file "adjectives.txt";
 my @noun_list = read_file "nouns.txt";
 
-# my $adj_file = "adjectives.txt";
-# open my $f0, $adj_file or die "Couldn't open $adj_file";
-# while (my $tmp = <$f0>) {
-#     push @adj_list, trim $tmp;
-# }
-# 
-# my $noun_file = "nouns.txt";
-# open my $f1, $noun_file or die "Couldn't open $noun_file";
-# while (my $tmp = <$f1>) {
-#     push @noun_list, trim $tmp;
-# }
-
 my $adj = splice @adj_list, rand @adj_list, 1;
 my $noun = splice @noun_list, rand @noun_list, 1;
 
